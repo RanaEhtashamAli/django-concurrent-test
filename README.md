@@ -1,8 +1,8 @@
 # Django Concurrent Test
 
 ![PyPI version](https://img.shields.io/pypi/v/django-concurrent-test)
-![License](https://img.shields.io/github/license/your-username/django-concurrent-test)
-![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/django-concurrent-test/tests.yml)
+![License](https://img.shields.io/github/license/RanaEhtashamAli/django-concurrent-test)
+![Build Status](https://img.shields.io/github/actions/workflow/status/RanaEhtashamAli/django-concurrent-test/tests.yml)
 ![Python versions](https://img.shields.io/pypi/pyversions/django-concurrent-test)
 ![Django versions](https://img.shields.io/pypi/djversions/django-concurrent-test)
 
@@ -462,6 +462,12 @@ twine upload dist/*
 5. Ensure all tests pass
 6. Submit a pull request
 
+## 📞 Contact
+
+- **Email**: ranaehtashamali1@gmail.com
+- **Phone**: +923224712517
+- **GitHub**: [@RanaEhtashamAli](https://github.com/RanaEhtashamAli)
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -474,9 +480,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/django-concurrent-test/issues)
+- **Issues**: [GitHub Issues](https://github.com/RanaEhtashamAli/django-concurrent-test/issues)
 - **Documentation**: [Read the Docs](https://django-concurrent-test.readthedocs.io/)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/django-concurrent-test/discussions)
+- **Discussions**: [GitHub Discussions](https://github.com/RanaEhtashamAli/django-concurrent-test/discussions)
+- **Email**: ranaehtashamali1@gmail.com
+- **Phone**: +923224712517
 
 ---
 

@@ -221,31 +221,36 @@ jobs:
       with:
         tag_name: v${{ github.run_number }}
         release_name: Release v${{ github.run_number }}
-        body: |
-          ## What's Changed
-          
-          This is an automated release from the main branch.
-          
-          ### Features
-          - Concurrent test execution with isolated databases
-          - Middleware for concurrency safety detection
-          - Timing analytics and benchmarking
-          - DRF integration support
-          - Comprehensive security features
-          
-          ### Technical Details
-          - Python 3.9+ support
-          - Django 3.2+ support
-          - PostgreSQL, MySQL, and SQLite support
-          - Telemetry-free design
-          
-          ### Installation
-          ```bash
-          pip install django-concurrent-test
-          ```
-          
-          ### Documentation
-          See the [README](https://github.com/${{ github.repository }}/blob/main/README.md) for detailed usage instructions.
+                 body: |
+           ## What's Changed
+           
+           This is an automated release from the main branch.
+           
+           ### Features
+           - Concurrent test execution with isolated databases
+           - Middleware for concurrency safety detection
+           - Timing analytics and benchmarking
+           - DRF integration support
+           - Comprehensive security features
+           
+           ### Technical Details
+           - Python 3.9+ support
+           - Django 3.2+ support
+           - PostgreSQL, MySQL, and SQLite support
+           - Telemetry-free design
+           
+           ### Installation
+           ```bash
+           pip install django-concurrent-test
+           ```
+           
+           ### Documentation
+           See the [README](https://github.com/RanaEhtashamAli/django-concurrent-test/blob/main/README.md) for detailed usage instructions.
+           
+           ### Contact
+           - **Email**: ranaehtashamali1@gmail.com
+           - **Phone**: +923224712517
+           - **GitHub**: [@RanaEhtashamAli](https://github.com/RanaEhtashamAli)
         draft: false
         prerelease: false
 

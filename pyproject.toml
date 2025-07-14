@@ -9,10 +9,10 @@ description = "Production-ready Django package for safe and configurable concurr
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Django Concurrent Test Team", email = "dev@example.com"}
+    {name = "Rana Ehtasham Ali", email = "ranaehtashamali1@gmail.com"}
 ]
 maintainers = [
-    {name = "Django Concurrent Test Team", email = "dev@example.com"}
+    {name = "Rana Ehtasham Ali", email = "ranaehtashamali1@gmail.com"}
 ]
 keywords = ["django", "testing", "concurrent", "parallel", "database", "postgresql", "mysql", "middleware", "analytics", "benchmarking"]
 classifiers = [
@@ -69,11 +69,11 @@ benchmark = [
 django_concurrent_test = "django_concurrent_test.pytest_plugin"
 
 [project.urls]
-Homepage = "https://github.com/example/django-concurrent-test"
+Homepage = "https://github.com/RanaEhtashamAli/django-concurrent-test"
 Documentation = "https://django-concurrent-test.readthedocs.io"
-Repository = "https://github.com/example/django-concurrent-test"
-"Bug Tracker" = "https://github.com/example/django-concurrent-test/issues"
-Changelog = "https://github.com/example/django-concurrent-test/blob/main/CHANGELOG.md"
+Repository = "https://github.com/RanaEhtashamAli/django-concurrent-test"
+"Bug Tracker" = "https://github.com/RanaEhtashamAli/django-concurrent-test/issues"
+Changelog = "https://github.com/RanaEhtashamAli/django-concurrent-test/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 packages = ["django_concurrent_test"]

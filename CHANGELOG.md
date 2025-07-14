@@ -197,6 +197,12 @@ This release includes full concurrent testing support for Django, including midd
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
+## Contact
+
+- **Email**: ranaehtashamali1@gmail.com
+- **Phone**: +923224712517
+- **GitHub**: [@RanaEhtashamAli](https://github.com/RanaEhtashamAli)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
