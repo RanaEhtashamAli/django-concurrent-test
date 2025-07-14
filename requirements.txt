@@ -1,0 +1,6 @@
+Django>=3.2,<5.1
+psycopg2-binary>=2.9.0; sys_platform != 'win32'
+psycopg2>=2.9.0; sys_platform == 'win32'
+mysqlclient>=2.1.0
+pytest>=7.0.0
+pytest-django>=4.5.0 

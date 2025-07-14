@@ -1,0 +1,161 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-concurrent-test"
+version = "1.0.0"
+description = "Production-ready Django package for safe and configurable concurrent testing with isolated databases, timing analytics, and concurrency simulation middleware"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Django Concurrent Test Team", email = "dev@example.com"}
+]
+maintainers = [
+    {name = "Django Concurrent Test Team", email = "dev@example.com"}
+]
+keywords = ["django", "testing", "concurrent", "parallel", "database", "postgresql", "mysql", "middleware", "analytics", "benchmarking"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "Django>=3.2,<5.1",
+    "psycopg2-binary>=2.9.0; sys_platform != 'win32'",
+    "psycopg2>=2.9.0; sys_platform == 'win32'",
+    "mysqlclient>=2.1.0",
+    "pytest>=7.0.0",
+    "pytest-django>=4.5.0",
+    "psutil>=5.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-xdist>=3.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=1.0.0",
+    "isort>=5.0.0",
+    "bandit>=1.7.0",
+    "safety>=2.0.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-django>=4.5.0",
+    "djangorestframework>=3.14.0",
+]
+benchmark = [
+    "pytest-benchmark>=4.0.0",
+]
+
+[project.entry-points."pytest11"]
+django_concurrent_test = "django_concurrent_test.pytest_plugin"
+
+[project.urls]
+Homepage = "https://github.com/example/django-concurrent-test"
+Documentation = "https://django-concurrent-test.readthedocs.io"
+Repository = "https://github.com/example/django-concurrent-test"
+"Bug Tracker" = "https://github.com/example/django-concurrent-test/issues"
+Changelog = "https://github.com/example/django-concurrent-test/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+packages = ["django_concurrent_test"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["django_concurrent_test"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "django.*",
+    "psycopg2.*",
+    "mysqlclient.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "concurrent: mark test for concurrent execution",
+]
+
+[tool.coverage.run]
+source = ["django_concurrent_test"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__pycache__/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+] 

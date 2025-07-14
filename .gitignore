@@ -1,0 +1,55 @@
+# === Python Bytecode and Cache ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Virtual Environments ===
+venv/
+env/
+.venv/
+.env
+.env.*
+
+# === Editor and IDE Files ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Test and Type Check Caches ===
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# === Build Artifacts ===
+build/
+dist/
+*.egg-info/
+*.manifest
+*.spec
+
+# === Logs and Databases ===
+*.log
+*.sqlite3
+
+# === OS / Misc ===
+.DS_Store
+Thumbs.db
+
+# === PyInstaller ===
+*.spec
+
+# === Jupyter Notebooks (if any future analysis) ===
+.ipynb_checkpoints/
+
+# === CI/CD Secrets or Overrides (precaution) ===
+secrets.json
+config.local.*
+
+
+PRODUCTION_READINESS.md
+RELEASE_PREPARATION_SUMMARY.md
